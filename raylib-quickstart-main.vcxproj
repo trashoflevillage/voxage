@@ -309,7 +309,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\main.cpp" />
-    <ClCompile Include="src\VoxageWorld.cpp" />
+    <ClCompile Include="src\World.cpp" />
     <ClCompile Include="VoxageApp.cpp" />
   </ItemGroup>
   <ItemGroup>

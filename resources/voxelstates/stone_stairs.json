@@ -1,0 +1,6 @@
+{
+  "parent": "template/stairs",
+  "textures": {
+    "main": "stone"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "states": {
+    "facing": [
+      "north",
+      "east",
+      "south",
+      "west"
+    ],
+    "half": [
+      "top",
+      "bottom"
+    ],
+    "shape": [
+      "full",
+      "corner"
+    ]
+  }
+}
