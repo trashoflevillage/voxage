@@ -24,7 +24,7 @@ int main()
 	SearchAndSetResourceDir("resources");
 
 	gApp = new VoxageApp();
-	gApp->mWorld = new VoxageWorld();
+	gApp->mWorld = new World();
 
 	// Load a texture from the resources directory
 	Texture wabbit = LoadTexture("wabbit_alpha.png");

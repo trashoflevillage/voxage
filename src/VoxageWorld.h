@@ -1,10 +1,10 @@
 #pragma once
 #include <raylib.h>
-class VoxageWorld
+class World
 {
 public:
 	Camera3D mCamera;
-	VoxageWorld();
+	World();
 	void DrawWorld();
 };
 

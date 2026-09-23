@@ -3,7 +3,7 @@
 class VoxageApp
 {
 public:
-	VoxageWorld* mWorld;
+	World* mWorld;
 	void Draw();
 };
 
