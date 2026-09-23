@@ -1,9 +1,11 @@
 #pragma once
-#include "VoxageWorld.h"
+#include "World.h"
 class VoxageApp
 {
 public:
+	Camera3D mCamera;
 	World* mWorld;
+	VoxageApp();
 	void Draw();
 };
 

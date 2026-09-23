@@ -7,8 +7,12 @@ by Jeffery Myers is marked with CC0 1.0. To view a copy of this license, visit h
 
 */
 
+#pragma once
+
 #include "raylib.h"
 #include "../globals.h"
+#include "World.h"
+#include "../VoxageApp.h"
 
 #include "resource_dir.h"	// utility header for SearchAndSetResourceDir
 
