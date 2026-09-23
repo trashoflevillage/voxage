@@ -6,10 +6,12 @@
 void Chunk::DrawChunk() {
 	int x = -1, y = -1, z = -1;
 	while (IterateVoxelPositions(x, y, z)) {
-		if (mVoxelStates[x][y][z] == 1) {
+		if (mVoxelStates[x][y][z] != 0) {
 			int worldX = x, worldY = y, worldZ = z;
 			LocalPositionToWorldPosition(worldX, worldY, worldZ);
-			DrawCube(Vector3(worldX, worldY, worldZ), 1, 1, 1, Color(255, 0, 0, 255));
+			Color color = Color(255, 0, 0, 255);
+			if (mVoxelStates[x][y][z] == 2) color = Color(0, 0, 255, 255);
+			DrawCube(Vector3(worldX, worldY, worldZ), 1, 1, 1, color);
 		}
 	}
 }

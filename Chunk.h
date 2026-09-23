@@ -1,5 +1,6 @@
 #pragma once
 #include "constants.h"
+
 // Defining a pointer doesnt need an include
 // If I later try to use World methods, it will break without this include, uncomment it
 // if World is an undefined type in Chunk!!!

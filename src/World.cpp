@@ -25,7 +25,11 @@ Chunk World::LoadChunk(int chunkX, int chunkY, int chunkZ) {
 	for (int x = 0; x < CHUNK_SIZE; x++) {
 		for (int y = 0; y < CHUNK_SIZE; y++) {
 			for (int z = 0; z < CHUNK_SIZE; z++) {
-				if (y < CHUNK_SIZE / 2) chunk.mVoxelStates[x][y][z] = 1;
+				if (y < CHUNK_SIZE / 2) 
+				{
+					if (((float)rand() / RAND_MAX) < 0.5f) chunk.mVoxelStates[x][y][z] = 2;
+					else chunk.mVoxelStates[x][y][z] = 1;
+				}
 				else chunk.mVoxelStates[x][y][z] = 0;
 			}
 		}
