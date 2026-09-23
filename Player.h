@@ -1,7 +1,11 @@
 #pragma once
 class Player
 {
-	int mX;
-	int mY;
+public:
+	float mX;
+	float mY;
+	float mZ;
+	void UpdatePlayer();
+	Player();
 };
 
